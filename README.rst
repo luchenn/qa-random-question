@@ -18,7 +18,7 @@ Installation
 #. Get the source code for this plugin from github_, either using git_, or downloading directly:
 
    - To download using git, install git and then type 
-     ``git clone git://github.com/NoahY/q2a-random-question.git share``
+     ``git clone git://github.com/NoahY/q2a-random-question.git random``
      at the command prompt (on Linux, Windows is a bit different)
    - To download directly, go to the `project page`_ and click **Download**
 
