@@ -20,6 +20,7 @@
 
 
 	qa_register_plugin_module('widget', 'qa-random-question.php', 'qa_random_questions', 'Random question');
+	qa_register_plugin_module('module', 'qa-random-admin.php', 'qa_random_question_admin', 'Random question widget');
 
 
 /*
