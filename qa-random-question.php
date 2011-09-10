@@ -32,7 +32,7 @@
                 $check = mysql_data_seek(
                     $temp,$rand
                 );
-                if(!check) $i--;
+                if(!$check) $i--;
                 else $random_question = qa_db_read_one_assoc($temp,true);
                 
                 if (is_array($random_question)) {
