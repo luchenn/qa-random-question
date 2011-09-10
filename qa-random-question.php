@@ -27,7 +27,7 @@
             $rand = rand()/getrandmax()*$rand;
             $random_question = qa_db_read_one_assoc(
                 qa_db_query_sub(
-                    'SELECT * FROM ^posts WHERE type=$ AND postid >= # LIMIT 1',
+                    'SELECT BINARY title as title, postid, netvotes, acount FROM ^posts WHERE type=$ AND postid >= # LIMIT 1',
                     'Q',$rand
                 ),
                 true
