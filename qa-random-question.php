@@ -39,11 +39,11 @@
                     $votes = (int)$random_question['netvotes'];
                     if($votes>0) {
                         if($votes > 1) $votes = str_replace('^','+'.$votes,qa_lang('main/x_votes'));
-                        else $votes = '+'.qa_lang('main/1_vote');
+                        else $votes = str_replace('1','+1',qa_lang('main/1_vote'));
                     }
                     else if($votes<0) {
                         if($votes < -1) $votes = str_replace('^',$votes,qa_lang('main/x_votes'));
-                        else $votes = '-'.qa_lang('main/1_vote');
+                        else $votes = str_replace('1','-1',qa_lang('main/1_vote'));
                     }
                     else $votes = '';
                     
