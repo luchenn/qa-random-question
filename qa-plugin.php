@@ -4,7 +4,7 @@
 	Plugin Name: Random question widget
 	Plugin URI:
 	Plugin Description: Outputs a random question in the sidebar
-	Plugin Version: 0.1
+	Plugin Version: 1.0b1
 	Plugin Date: 2011-08-30
 	Plugin Author: NoahY
 	Plugin License: GPLv2
