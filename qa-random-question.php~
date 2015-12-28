@@ -21,7 +21,7 @@
 				'SELECT BINARY title as title, postid, netvotes, acount FROM ^posts WHERE type=$',
                 'Q'
 			);
-            $max = mysqli_num_rows($temp);
+            $max = mysql_num_rows($temp);
             if(!$max) return;
             
             $themeobject->output('<h2>'.qa_opt('random_question_title').'</h2>');
@@ -29,7 +29,7 @@
             for($i=0;$i < qa_opt('random_question_number'); $i++) {
                 
                 $rand = rand()/getrandmax()*$max;
-                $check = mysqli_data_seek(
+                $check = mysql_data_seek(
                     $temp,$rand
                 );
                 if(!$check) $i--;
